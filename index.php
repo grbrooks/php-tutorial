@@ -25,8 +25,17 @@
 echo "Today is " . date("Y/m/d") . "<br>";
 echo "Today is " . date("Y.m.d") . "<br>";
 echo "Today is " . date("Y-m-d") . "<br>";
-echo "Today is " . date("l")."<br>"
+echo "Today is " . date("l")."<br>";
 echo readfile("webdictionery.txt");
+$myfile = fopen("testfile.html", "w");
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$txt = "John Doe\n";
+fwrite($myfile, $txt);
+$txt = "Jane Doe\n";
+fwrite($myfile, $txt);
+$txt="Graham Brooks";
+fwrite($myfile, $txt);
+fclose($myfile);
 ?>
 </body>
 </html>
