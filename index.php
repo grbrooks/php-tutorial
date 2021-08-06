@@ -21,5 +21,12 @@
     <h1><?php echo $title; ?></h1>
     <p><?php echo $content; ?></p>
     <?php include('templates/footer.php');?>
+    <?php
+echo "Today is " . date("Y/m/d") . "<br>";
+echo "Today is " . date("Y.m.d") . "<br>";
+echo "Today is " . date("Y-m-d") . "<br>";
+echo "Today is " . date("l");
+echo readfile("webdictionary.txt");
+?>
 </body>
 </html>
